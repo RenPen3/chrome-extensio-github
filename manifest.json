@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Project Image Uploader",
+  "version": "1.0",
+  "description": "Add images to your GitHub projects",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "addImage/addImage.html",
+    "default_icon": {
+      "16": "img/image1.jpg"
+    }
+  }
+}
