@@ -9,5 +9,14 @@
     "default_icon": {
       "16": "img/image1.jpg"
     }
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }

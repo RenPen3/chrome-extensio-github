@@ -4,13 +4,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrome Extension for Github</title>
+    <title>Add Image to Github Repo Project</title>
+    <link rel="stylesheet" href="addImage.css">
   </head>
 
   <body>
 
     <!-- My goal: add a project image to the repos list page -->
-    <h1>Hello My Fellow aliens!</h1>
+    <div class="container">
+
+      <h2 class="header-title">Add Image to your Github Repo Project</h2>
+
+      <hr class="divider">
+
+      <form class="form">
+        <small class="img-size">(Recommended image size 200x100)</small>
+        <input type="image" src="https://placehold.co/200x100/FFFFFF/DADADA?text=Your Image"
+          alt="placeholder image" width="200" height="100">
+        <label for="text">Image URL:</label>
+        <input type="url" placeholder="https://exampleImgURL.jpg">
+        <a class="clear-all" href="#">Clear All</a>
+      </form>
+      <!-- <h2 class="title">This is a popup!</h2>
+      <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, aliquid
+        voluptatibus.
+        Delectus.</p> -->
+      <div class="btn-container">
+        <button type="submit" class="btn btn1">Add Image</button>
+        <!-- <button type="text" class="btn btn2">Edit</button> -->
+        <button type="text" class="btn btn3">Remove</button>
+      </div>
+    </div>
 
 
     <script src="background.js"></script>
