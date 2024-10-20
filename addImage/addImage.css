@@ -15,10 +15,14 @@ body {
 }
 
 .container .divider {
-  height: 1px;
+  height: 2px;
   width: 100%;
   outline: transparent;
-  background: #aed6ff;
+  /* background: #aed6ff; */
+  /* background: #151b23; */
+  background: rgb(145,152,161);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, transparent 90%);
+  border: none;
   border-radius: 10px;
 }
 
@@ -38,13 +42,13 @@ body {
 
 .container .btn-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .container .btn {
-  font-size: 16px;
-  width: 120px;
+  font-size: 14px;
+  width: 110px;
   height: 36px;
   /* border: 1px solid #aed6ff; */
   border-radius: 4px;
@@ -53,7 +57,7 @@ body {
   color: #9198a1;
   background: #151b23;
   background: transparent;
-  /* margin-right: 16px; */
+  margin-right: 16px;
 }
 
 .container .btn:hover {
@@ -68,7 +72,7 @@ form {
 }
 
 .form .img-size {
-  font-size: 16px;
+  font-size: 14px;
   color: #afb8c3;
 }
 
@@ -108,9 +112,9 @@ form {
 
 .form input[type="url"] {
   display: block;
-  font-size: 16px;
-  width: 96%;
-  padding: 8px;
+  font-size: 14px;
+  width: 98%;
+  padding: 6px;
   border-radius: 2px;
   /* color: rgb(155, 252, 0); */
   border: none;
@@ -118,18 +122,18 @@ form {
 }
 
 .form input[type="url"]::placeholder {
-  color: rgb(220, 220, 220);
+  color: rgb(168, 168, 168);
 }
 
 .form label {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #FFF;
   margin-top: 40px;
 }
 
 .form .clear-all {
-  font-size: 14px;
+  font-size: 12px;
   /* color: rgb(168, 211, 255); */
   color: #9198a1;
   text-underline-offset: 3px;
