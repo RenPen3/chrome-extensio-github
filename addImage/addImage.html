@@ -27,7 +27,7 @@
 
 
         <label for="text">Image URL:</label>
-        <input type="url" placeholder="https://example.jpg">
+        <input id="url" name="urlInput" type="url" placeholder="https://example.jpg">
         <a class="clear-all" href="#">Clear All</a>
       </form>
       <!-- <h2 class="title">This is a popup!</h2>
@@ -35,14 +35,16 @@
         voluptatibus.
         Delectus.</p> -->
       <div class="btn-container">
-        <button type="submit" class="btn btn1">Add Image</button>
-        <button type="text" class="btn btn3">Remove</button>
-        <button type="submit" class="btn btn2">Submit</button>
+        <button type="submit" name="addImage" class="btn btn1">Add Image</button>
+        <button type="text" name="remove" class="btn btn2">Remove</button>
+        <button type="submit" name="submit" class="btn btn3">Submit</button>
       </div>
     </div>
 
-
-    <script src="background.js"></script>
+    <script src="addImage.js"></script>
+    <script src="/background.js"></script>
+    <script src="/scripts/content.js"></script>
+    <script src="/content.js"></script>
   </body>
 
 </html>
