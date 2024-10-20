@@ -1,17 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  background: #0D1117;
+  /* background: #0D1117; */
   /* background: #368dff; */
   /* background: rgb(0,35,255);
   background: linear-gradient(220deg, rgba(0,35,255,1) 0%, rgba(9,9,121,1) 100%); */
   background: rgb(145,152,161);
   background: linear-gradient(220deg, rgba(145,152,161,1) 0%, rgba(13,17,23,1) 70%);
-  padding: 16px;
+  padding: 24px;
   width: 400px;
   height: auto;
+  margin: 0;
+  /* border: 2px solid lime; */
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .container .divider {
@@ -44,11 +51,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 30px;
 }
 
 .container .btn {
   font-size: 14px;
-  width: 110px;
+  width: 120px;
   height: 36px;
   /* border: 1px solid #aed6ff; */
   border-radius: 4px;
@@ -67,7 +75,7 @@ body {
 }
 
 form {
-  margin: 20px 0;
+  margin: 10px 0;
   line-height: 32px;
 }
 
@@ -113,7 +121,7 @@ form {
 .form input[type="url"] {
   display: block;
   font-size: 14px;
-  width: 98%;
+  width: 100%;
   padding: 6px;
   border-radius: 2px;
   /* color: rgb(155, 252, 0); */
@@ -124,6 +132,15 @@ form {
 .form input[type="url"]::placeholder {
   color: rgb(168, 168, 168);
 }
+.form input[type="file"] {
+  font-size: 14px;
+  /* border: 1px solid #aed6ff; */
+  width: 100%;
+  color: #9198a1;
+  margin: 8px 0;
+  cursor: pointer;
+  /* color: rgb(168, 168, 168); */
+}
 
 .form label {
   font-size: 14px;
@@ -132,13 +149,34 @@ form {
   margin-top: 40px;
 }
 
+.form .con {
+  /* border: 1px solid #9198a1; */
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .form .clear-all {
   font-size: 12px;
   /* color: rgb(168, 211, 255); */
   color: #9198a1;
-  text-underline-offset: 3px;
+  /* text-underline-offset: 3px; */
+  /* margin-right: 60px; */
+  margin: 0;
+  /* border: 1px solid lime; */
 }
 .form .clear-all:hover {
   color: #ffffff;
+}
+
+
+
+.form .announce {
+  margin: 0;
+  margin-inline: auto;
+  font-size: 12px;
+  color: #afb8c3;
+  /* border: 1px solid red; */
 }
 
