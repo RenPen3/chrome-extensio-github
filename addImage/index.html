@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Image to Github Repo Project</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <!-- My goal: add a project image to the repos list page -->
+    <div class="container">
+
+      <h2 class="header-title">Add Image to your Github Repo Project</h2>
+
+      <hr class="divider">
+
+      <form class="form">
+        <small class="img-size">(Recommended image size 400x200)</small>
+        <div contentEditable="true" class="image-overlay-container">
+          <img class="image-overlay" id="imgOvrLay"
+            src="https://i.ibb.co/wKLZ1nT/dod-portrait-Opt.jpg" alt="placeholder image-overlay">
+          <input class="image" type="image"
+            src="https://placehold.co/200x100/FFFFFF/DADADA?text=Your Image"
+            alt="placeholder image">
+        </div>
+        <!-- <div>
+          <input id="imageUpload" type="file" accept="image/*">
+        </div> -->
+
+
+
+        <label for="text">Image URL:</label>
+        <input id="imageUrl" name="imageUrl" type="url" placeholder="https://example.jpg">
+        <div class="con">
+          <a class="clear-all" href="#">Clear All</a>
+          <p class="announce">*Hosted images ONLY*</p>
+        </div>
+
+
+      </form>
+      <!-- <h2 class="title">This is a popup!</h2>
+      <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, aliquid
+        voluptatibus.
+        Delectus.</p> -->
+      <div class="btn-container">
+        <a
+          href="https://raw.githubusercontent.com/RenPen3/chrome-extension-github/main/NameImg.png">Click
+          Me</a>
+        <button type="submit" name="addImage" class="btn addBtn">Submit
+          Image</button>
+        <button type="text" name="remove" class="btn rmBtn">Remove Image</button>
+        <!-- <button type="submit" name="submit" class="btn btn3">Submit</button> -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="/background.js"></script>
+    <script src="/content.js"></script>
+  </body>
+
+</html>

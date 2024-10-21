@@ -1,11 +1,34 @@
+// {
+//   "manifest_version": 3,
+//   "name": "GitHub Project Image Uploader",
+//   "version": "1.0",
+//   "description": "Add images to your GitHub projects",
+//   "permissions": ["activeTab", "storage"],
+//   "action": {
+//     "default_popup": "addImage/addImage.html",
+//     "default_icon": {
+//       "16": "img/image1.jpg"
+//     }
+//   },
+//   "background": {
+//     "service_worker": "background.js"
+//   },
+//   "content_scripts": [
+//     {
+//       "matches": ["https://github.com/*"],
+//       "js": ["content.js"]
+//     }
+//   ]
+// }
+
 {
   "manifest_version": 3,
   "name": "GitHub Project Image Uploader",
   "version": "1.0",
-  "description": "Add images to your GitHub projects",
+  "description": "Add images to your GitHub projects.",
   "permissions": ["activeTab", "storage"],
   "action": {
-    "default_popup": "addImage/addImage.html",
+    "default_popup": "addImage/index.html",
     "default_icon": {
       "16": "img/image1.jpg"
     }
