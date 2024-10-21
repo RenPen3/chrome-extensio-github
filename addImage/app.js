@@ -1,24 +1,23 @@
 const addBtn = document.querySelector('.addBtn');
 const rmBtn = document.querySelector('.rmBtn');
-// const addBtn3 = document.querySelector('.btn3');
-// const allBtns = document.querySelectorAll('.btn');
-const imageOvrLay = document.getElementsByTagName('img');
+const imgOvrLayCon = document.querySelector('.image-overlay-container');
+const imageOvrLay = document.getElementById('imgOvrLay');
 const clrAll = document.querySelector('.clear-all');
 const imageUrl = document.getElementById('imageUrl');
 
-console.log(imageOvrLay);
 
-
+// Add image button
 addBtn.addEventListener('click', () => {
   console.log('add image')
+
 })
+
+// Remove image button
 rmBtn.addEventListener('click', () => {
   console.log('removed image')
 })
-// addBtn3.addEventListener('click', () => {
-//   console.log('add button 3')
-// })
 
+// Clear URL link
 clrAll.addEventListener('click', () => {
   imageUrl.value = '';
 })
