@@ -17,7 +17,7 @@
 
       <hr class="divider">
 
-      <form class="form">
+      <form method="POST" class="form">
         <small class="img-size">(Recommended image size 400x200)</small>
         <div class="image-overlay-container">
           <img class="image-overlay" src="https://i.ibb.co/qDxS6W6/test-img.jpg" alt="placeholder image-overlay">
@@ -35,13 +35,14 @@
         voluptatibus.
         Delectus.</p> -->
       <div class="btn-container">
-        <button type="submit" name="addImage" class="btn btn1">Add Image</button>
-        <button type="text" name="remove" class="btn btn2">Remove</button>
+        <input type="submit" class="btn btn1" value="Add Image">
+        <input type="button" class="btn btn2" value="Remove">
+        <!-- <button type="submit" name="addImage" class="btn btn1">Add Image</button> -->
+        <!-- <button type="text" name="remove" class="btn btn2">Remove</button> -->
         <!-- <button type="submit" name="submit" class="btn btn3">Submit</button> -->
       </div>
     </div>
 
-    <script src="addImage.js"></script>
     <script src="/background.js"></script>
     <script src="/scripts/content.js"></script>
     <script src="/content.js"></script>
